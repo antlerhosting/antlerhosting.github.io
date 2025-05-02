@@ -1,159 +1,165 @@
 /* styles.css */
 
+:root {
+  --color-bg: #d6d6d6;
+  --color-text: #000000;
+  --color-accent: #004f04;
+  --color-secondary-bg: #e3e3e3;
+}
+
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1e1e1e;
-    color: #e0e0e0;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  
-  header {
-    background-color: #2a2a2a;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-  }
-  
-  .header-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #bb86fc;
-  }
-  
-  .login-btn {
-    background-color: #bb86fc;
-    color: #1e1e1e;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .hero {
-    display: flex;
-    align-items: center;
-    padding: 4rem 0;
-    flex-wrap: wrap;
-  }
-  
-  .hero-text {
-    flex: 1;
-    padding-right: 2rem;
-  }
-  
-  .hero-text h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero-text p {
-    font-size: 1.25rem;
-  }
-  
-  .hero-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-  }
-  
-  .plans {
-    padding: 4rem 0;
-    background-color: #292929;
-    text-align: center;
-  }
-  
-  .plan-cards {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .plan {
-    background-color: #1e1e1e;
-    padding: 2rem;
-    border-radius: 12px;
-    width: 300px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  .plan h3 {
-    color: #bb86fc;
-    margin-bottom: 0.5rem;
-  }
-  
-  .price {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .plan ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 1.5rem;
-  }
-  
-  .plan li {
-    margin: 0.5rem 0;
-  }
-  
-  .plan button {
-    background-color: #bb86fc;
-    color: #1e1e1e;
-    border: none;
-    padding: 0.75rem 1.25rem;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background-color 0.3s;
-  }
-  
-  .plan button:hover {
-    background-color: #a970f1;
-  }
-  
-  .features {
-    padding: 4rem 0;
-    text-align: center;
-  }
-  
-  .features-grid {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .feature {
-    background-color: #2a2a2a;
-    padding: 2rem;
-    border-radius: 12px;
-    width: 300px;
-  }
-  
-  footer {
-    background-color: #1a1a1a;
-    padding: 1rem 0;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #888;
-  }
-  
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header {
+  background-color: var(--color-secondary-bg);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--color-accent);
+}
+
+.login-btn {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.plans {
+  padding: 4rem 0;
+  background-color: var(--color-secondary-bg);
+  text-align: center;
+}
+
+.plan-cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background-color: var(--color-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.plan h3 {
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.plan li {
+  margin: 0.5rem 0;
+}
+
+.plan button {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.plan button:hover {
+  filter: brightness(1.1);
+}
+
+.features {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.features-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background-color: var(--color-secondary-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 300px;
+}
+
+footer {
+  background-color: var(--color-bg);
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+}
